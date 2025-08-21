@@ -125,7 +125,7 @@
         // Об'єкт з даними про хімічні речовини
         const substanceData = {
             'Очисник Kontakt Chemie KONTAKT PCC': {
-                image: 'https://raw.githubusercontent.com/shylovak-spec/ziz/main/images/pasta.png', // Замінити картинку
+                image: 'https://raw.githubusercontent.com/shylovak-spec/zizDIP/refs/heads/main/PCC.webp', // Замінити картинку
                 dangers: `
                     <h3 class="font-bold text-lg mb-2">Небезпеки</h3>
                     <ul class="list-disc pl-5 text-gray-700">
@@ -257,7 +257,7 @@
                 `
             },
             'TCG300 Heat conducting gel 30CC pink Dobon': {
-                image: 'https://raw.githubusercontent.com/shylovak-spec/ziz/refs/heads/main/images/Glutoclean.webp',// Замінити картинку
+                image: 'https://raw.githubusercontent.com/shylovak-spec/zizDIP/refs/heads/main/pink%20Dobon.png',// Замінити картинку
                 dangers: `
                     <h3 class="font-bold text-lg mb-2">Небезпеки</h3>
                     <ul class="list-disc pl-5 text-gray-700">
@@ -318,8 +318,8 @@
                     </ul>
                 `
             },
-            'Lens Cleaner': {
-                image: 'https://github.com/shylovak-spec/ziz/blob/main/images/%D1%87%D1%96%D0%BF%D0%BA%D0%B2%D1%96%D0%BA.jpg?raw=true',// Замінити картинку
+            'Kenair Lens Cleaner': {
+                image: 'https://raw.githubusercontent.com/shylovak-spec/zizDIP/7b8cfb771308a11af1b64e5e1d3c07b4f034f29b/kenair.jpeg',// Замінити картинку
                 dangers: `
                     <h3 class="font-bold text-lg mb-2">Небезпеки</h3>
                     <ul class="list-disc pl-5 text-gray-700">
