@@ -59,6 +59,11 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
+        .fixed-image {
+            width: 200px;
+            height: 200px; /* Додано фіксовану висоту */
+            object-fit: contain; /* Змінено для збереження пропорцій і розміщення */
+        }
         @media (min-width: 640px) {
             .container.detail-view {
                 flex-direction: row;
@@ -81,7 +86,8 @@
                 gap: 1rem;
             }
             .image-and-buttons img {
-                width: 200px; /* Збільшення розміру зображення на більших екранах */
+                width: 200px;
+                height: 200px;
             }
             .buttons-container {
                 display: flex;
@@ -155,7 +161,7 @@
                     </ul>
                 `
             },
-            'Спирт ізопропіловий': {
+            'Спирт ізопропиловий': {
                 image: 'https://raw.githubusercontent.com/shylovak-spec/ziz/refs/heads/main/images/shopping.webp',
                 dangers: `
                     <h3 class="font-bold text-lg mb-2">Небезпеки</h3>
@@ -365,8 +371,8 @@
                 <div class="info-container w-full sm:w-1/2">
                     <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-left">${substanceName}</h2>
                     
-                    <div class="image-and-buttons">
-                        <img src="${data.image}" alt="Зображення ${substanceName}" class="w-48 h-auto rounded-lg mb-4 sm:mb-0">
+                    <div class="image-and-buttons flex flex-col items-center">
+                        <img src="${data.image}" alt="Зображення ${substanceName}" class="rounded-lg mb-4 sm:mb-0 fixed-image">
                         <div class="buttons-container w-full sm:w-auto">
                             <button onclick='showSubstanceInfo(${JSON.stringify(substanceName)}, "dangers")' class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105 mb-2">Небезпеки</button>
                             <button onclick='showSubstanceInfo(${JSON.stringify(substanceName)}, "actions")' class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105 mb-2">Дії при аварії</button>
